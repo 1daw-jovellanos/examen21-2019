@@ -16,9 +16,9 @@ import static org.junit.Assert.*;
  *
  * @author victor
  */
-public class Ejericicio4Test {
+public class Ejercicio4Test {
 
-    public Ejericicio4Test() {
+    public Ejercicio4Test() {
     }
 
     @BeforeClass
@@ -48,9 +48,23 @@ public class Ejericicio4Test {
         assertEquals(Ejercicio4.hayExterior(a), true);
         a = new String[]{
             "zas fas",
-            "iwe oiewr oi veLanY asd",
+            "iwe oiewr oiiveLanY asd",
             "iwe oi",
             "oirweo oiewr iVLaNy fsdp"
+        };
+        assertEquals(Ejercicio4.hayExterior(a), false);
+                a = new String[]{
+            "zas fas",
+            "iwe oiewr oi iveLaiveLANYasd",
+            "iwe oi",
+            "oirweo oiewr iVeLaNy fsdp"
+        };
+        assertEquals(Ejercicio4.hayExterior(a), true);
+        a = new String[]{
+            "zas fas",
+            "iwe oiewr oi iveLaiveLANYasd ivelany",
+            "iwe oi",
+            "oirweo oiewr iVeLay fsdp"
         };
         assertEquals(Ejercicio4.hayExterior(a), false);
         a = new String[]{};
