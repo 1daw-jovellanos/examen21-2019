@@ -5,6 +5,7 @@ import java.time.LocalDate;
 /**
  * Clase Tablet para el examen
  * @author victor
+ * @version Feb/2019
  */
 public class Tablet {
     
