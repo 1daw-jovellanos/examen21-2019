@@ -5,8 +5,7 @@ public class Ejercicio4 {
     public static boolean hayExterior(String[] paradas) {
         if (paradas == null) {
             throw new IllegalArgumentException();
-        }
-        
+        }        
         boolean encontrado = false;
         int i = 0;
         int cuenta = 0;

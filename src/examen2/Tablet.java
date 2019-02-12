@@ -2,6 +2,10 @@ package examen2;
 
 import java.time.LocalDate;
 
+/**
+ * Clase Tablet para el examen
+ * @author victor
+ */
 public class Tablet {
     
     private String marca;
@@ -30,7 +34,10 @@ public class Tablet {
         this.descripcionAveria = descripcionAveria;
         this.horas = 0.25;
     }
-
+    /**
+     * Devuelve el modelo
+     * @return el modelo, como cadena
+     */
     public String getModelo() {
         return modelo;
     }
@@ -50,7 +57,11 @@ public class Tablet {
     public double getHoras() {
         return horas;
     }
-
+    
+    /**
+     * Establece las horas empleadas en la reparación
+     * @param horas Horas empleadas
+     */
     public void setHoras(double horas) {
         this.horas = horas;
     }
